@@ -1,0 +1,77 @@
+body {
+  font-family:sans-serif;
+
+  margin:0;
+}
+#game-bg{
+  position:absolute;
+  top:0;
+  filter:blur(5px);
+  z-index:-1;
+  width:100%;
+  height:100%;
+  background:url(https://www.trbimg.com/img-56a52d59/turbine/ct-emergency-room-drug-shortages-20160124); 
+}
+
+#game-title{
+ text-align:center;
+ font-weight:bold;
+ font-size:5em;
+ background:#fffb;
+ margin-top:5%;
+}
+
+#game-menu{
+position:absolute;
+top:50%;
+  display:flex;
+flex-direction: column}
+
+.menu-option{
+  font-size:2.5em;
+  padding:.25em;
+  width:33vw;
+  background: linear-gradient(90deg, rgba(200,200,200,.8) 0%, rgba(200,200,200,.8) 80%, rgba(0,200,200,0) 100%);
+  transition:.5s;
+  cursor:pointer;
+}
+
+.menu-option:hover{
+  font-weight:bold;
+  font-size:3em;
+  position:relative;
+  width:40vw;
+  padding:.3em;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(0,255,255,0) 100%);
+}
+
+#popup-container{
+  opacity:0;
+  z-index:-1;
+  top:0;
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  background:#000b;
+}
+
+#popup{
+  position:absolute;
+  left:5vw;
+  top:5vh;
+  background:#ddd;
+  border:solid 5px #fff;
+    width:90vw;
+  height:90vh;
+  
+}
+
+video{
+  width:100%;
+  height:100%;
+}
+
+@keyframes popup {
+  0%   {opacity:0; z-index:-1;}
+  100% {opacity:1; z-index:3;}
+}
