@@ -25,11 +25,11 @@ background-size:cover;
   animation-timing-function: ease-in-out;
   position:absolute;
   display:block;
-  background:#0000;
+  background:#fff0;
   width:500px;
   height:500px;
   border-radius:50%;
-  border:solid 15000px #0006;
+  border:solid 15000px #fff6;
 }
 
 #circle2{
@@ -38,11 +38,11 @@ background-size:cover;
   display:block;
   top:-10px;
   left:-10px;
-  background:#0000;
+  background:#fff0;
   width:500px;
   height:500px;
   border-radius:50%;
-  border:solid 10px #000;
+  border:solid 10px #fff;
 }
 
 #dot-container {
@@ -79,13 +79,13 @@ background-size:cover;
 }
 
 @keyframes close-in {
-  0%   {height:500px; width:500px; border:solid 15000px #0001;
+  0%   {height:500px; width:500px; border:solid 15000px #fff1;
   }
-  41% {height:150px; width:150px; border:solid 15000px #000d; z-index:3;
+  41% {height:150px; width:150px; border:solid 15000px #fffd; z-index:3;
   }
   50% {height:0vh; width:0vw; border:solid 15000px #f00;
   }
-  100% {height:0vh; width:0vw; border:solid 15000px #000;
+  100% {height:0vh; width:0vw; border:solid 15000px #fff;
   }
 }
 
@@ -126,6 +126,6 @@ background-size:cover;
   38% { transform: translate(10px, -17px) rotate(-1deg); }
   40% { transform: translate(70px, -50px) rotate(-1deg); background:#f00c;}
   45% { background:#f00c; }
-  70% { background:#0000; }
-  100% { background:#0000; }
+  70% { background:#fff0; }
+  100% { background:#fff0; }
 }
